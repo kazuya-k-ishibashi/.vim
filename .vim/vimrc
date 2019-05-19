@@ -1,0 +1,2 @@
+set rtp+=$HOME/.vim/
+runtime! rc/*.vim
