@@ -15,3 +15,7 @@ repo = 'Shougo/context_filetype.vim'
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+build = './install.sh nightly'
+
