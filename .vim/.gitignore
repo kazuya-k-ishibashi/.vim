@@ -1,0 +1,5 @@
+viminfo
+backup/*
+swap/*
+undo/*
+!.gitkeep
