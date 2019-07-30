@@ -3,7 +3,7 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'raphamorim/lucario'
-hoo_add = '''
+hook_add = '''
   autocmd MyAutoCmd VimEnter * nested colorscheme lucario
   syntax on
 '''
