@@ -1,4 +1,5 @@
 viminfo
+viminfo.*
 backup/*
 swap/*
 undo/*
