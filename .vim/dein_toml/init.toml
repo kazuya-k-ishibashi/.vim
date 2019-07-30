@@ -26,3 +26,13 @@ on_ft = 'toml'
 repo = 'neoclide/coc.nvim'
 build = './install.sh nightly'
 
+[[plugins]]
+repo = 'kazuph/previm'
+rev = 'feature/add-plantuml-plugin'
+hook_add = '''
+  nnoremap <silent><Space><Space>p :PrevimOpen<CR>
+'''
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
