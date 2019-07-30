@@ -25,6 +25,10 @@ on_ft = 'toml'
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 build = './install.sh nightly'
+hook_add = '''
+  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+'''
 
 [[plugins]]
 repo = 'kazuph/previm'
