@@ -12,5 +12,7 @@ set showmatch
 set matchtime=1
 " 入力中のコマンドを表示する
 set showcmd
+"
+set cmdheight=2
 
 syntax on

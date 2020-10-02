@@ -1,0 +1,30 @@
+{
+  "languageserver": {
+    "d": {
+      "command": "/home/kishibashi/.dub/packages/.bin/dls-latest/dls",
+      "args": [ "--stdio" ],
+      "filetypes": [ "d" ],
+      "trace.server": "off",
+      "rootPatterns": [ "dub.json", "dub.sdl" ],
+      "initializationOptions": {
+      },
+      "settings": {
+      }
+    },
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": [ "elm" ],
+      "rootPatterns": [ "elm.json" ],
+      "initializationOptions": {
+        "elmAnalyseTrigger": "change"
+      }
+    },
+    "dart": {
+      "command": "dart",
+      "args": [ "/usr/lib/dart/bin/snapshots/analysis_server.dart.snapshot", "--lsp" ],
+      "filetypes": [ "dart" ],
+      "disableDynamicRegister": true,
+      "trace.server": "verbose"
+    }
+  },
+}

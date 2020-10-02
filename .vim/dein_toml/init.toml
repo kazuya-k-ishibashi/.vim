@@ -3,10 +3,6 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'raphamorim/lucario'
-hook_add = '''
-  autocmd MyAutoCmd VimEnter * nested colorscheme lucario
-  syntax on
-'''
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
@@ -24,6 +20,8 @@ on_ft = 'toml'
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
+rev = 'release'
+merged = '0'
 build = './install.sh nightly'
 hook_add = '''
   inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -40,3 +38,8 @@ hook_add = '''
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+hook_add = '''
+  let g:table_mode_corner = '|'
+'''

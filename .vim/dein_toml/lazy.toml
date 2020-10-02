@@ -1,3 +1,46 @@
 [[plugins]]
+repo = 'suan/vim-instant-markdown'
+on_ft = ['md']
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = ['html']
+hook_add = '''
+  let g:user_emmet_leader_key='<C-E>'
+  let g:user_emmet_settings = {
+  \   'lang': 'ja',
+  \   'locale': 'ja-JP'
+  \ }
+'''
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['riot']
+
+[[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript']
+
+[[plugins]]
+repo = 'ryym/vim-riot'
+on_ft = ['riot']
+
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
+on_ft = ['pug']
+
+[[plugins]]
+repo = 'elmcast/elm-vim'
+on_ft = 'elm'
+
+[[plugins]]
+repo = 'dart-lang/dart-vim-plugin'
+on_ft = ['dart']
+
+[[plugins]]
+repo = 'thosakwe/vim-flutter'
+on_ft = ['dart']
+
+[[plugins]]
+repo = 'jparise/vim-graphql'
+on_ft = ['graphql']
