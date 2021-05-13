@@ -3,19 +3,8 @@ repo = 'suan/vim-instant-markdown'
 on_ft = ['md']
 
 [[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['html']
-hook_add = '''
-  let g:user_emmet_leader_key='<C-E>'
-  let g:user_emmet_settings = {
-  \   'lang': 'ja',
-  \   'locale': 'ja-JP'
-  \ }
-'''
-
-[[plugins]]
 repo = 'pangloss/vim-javascript'
-on_ft = ['riot']
+on_ft = ['javascript', 'riot']
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'

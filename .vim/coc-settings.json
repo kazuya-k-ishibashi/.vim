@@ -1,30 +1,61 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascript.jsx",
+    "javascriptreact",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact",
+    "css",
+    "less",
+    "scss",
+    "stylus",
+    "json",
+    "graphql",
+    "markdown",
+    "yaml",
+    "html"
+  ],
+  "javascript.suggestionActions.enabled": false,
+  "prettier.requireConfig": true,
+  "prettier.disableSuccessMessage": true,
   "languageserver": {
     "d": {
       "command": "/home/kishibashi/.dub/packages/.bin/dls-latest/dls",
-      "args": [ "--stdio" ],
-      "filetypes": [ "d" ],
+      "args": ["--stdio"],
+      "filetypes": ["d"],
       "trace.server": "off",
-      "rootPatterns": [ "dub.json", "dub.sdl" ],
-      "initializationOptions": {
-      },
-      "settings": {
-      }
+      "rootPatterns": ["dub.json", "dub.sdl"],
+      "initializationOptions": {},
+      "settings": {}
+    },
+    "dart": {
+      "command": "dart",
+      "args": [
+        "/usr/lib/dart/bin/snapshots/analysis_server.dart.snapshot",
+        "--lsp"
+      ],
+      "filetypes": ["dart"],
+      "disableDynamicRegister": true,
+      "trace.server": "verbose"
+    },
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
     },
     "elmLS": {
       "command": "elm-language-server",
-      "filetypes": [ "elm" ],
-      "rootPatterns": [ "elm.json" ],
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
       "initializationOptions": {
         "elmAnalyseTrigger": "change"
       }
     },
-    "dart": {
-      "command": "dart",
-      "args": [ "/usr/lib/dart/bin/snapshots/analysis_server.dart.snapshot", "--lsp" ],
-      "filetypes": [ "dart" ],
-      "disableDynamicRegister": true,
-      "trace.server": "verbose"
+    "graphql": {
+      "command": "graphql-lsp",
+      "args": ["server", "-m", "stream"],
+      "filetypes": ["graphql"]
     }
-  },
+  }
 }
