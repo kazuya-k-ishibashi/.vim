@@ -4,7 +4,7 @@
 
 " copy
 "ヤンクした時にクリップボードにコピーする
-set clipboard=unnamedplus
+"set clipboard+=unnamedplus
 
 " delete
 set backspace=indent,eol,start

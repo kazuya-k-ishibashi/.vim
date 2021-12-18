@@ -1,24 +1,24 @@
-[[plugins]]
+[[plugins]]  # プラグインマネージャ
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'raphamorim/lucario'
 
-[[plugins]]
+[[plugins]]  # Vimプロセス非同期実行ライブラリ
 repo = 'Shougo/vimproc.vim'
 
-[[plugins]]
+[[plugins]]  # カーソル位置のファイルタイプを特定する
 repo = 'osyo-manga/vim-precious'
 depends = ['context_filetype.vim']
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
-[[plugins]] # toml syntax
+[[plugins]]  # toml syntax support
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
-[[plugins]]
+[[plugins]]  # language server
 repo = 'neoclide/coc.nvim'
 rev = 'release'
 merged = '0'
@@ -27,29 +27,26 @@ hook_add = '''
   inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
   inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
   let g:coc_global_extensions = [
-    \  'coc-html'
+    \  'coc-xml'
+    \, 'coc-html'
     \, 'coc-css'
     \, 'coc-markdownlint'
     \, 'coc-json'
     \, 'coc-tsserver'
+    \, 'coc-eslint'
     \, 'coc-prettier'
     \, 'coc-deno'
+    \, 'coc-java'
+    \, 'coc-kotlin'
     \ ]
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
 '''
 
-[[plugins]]
-repo = 'kazuph/previm'
-rev = 'feature/add-plantuml-plugin'
+[[plugins]]  # Markdown, PlantUML等のプレビュー
+repo = 'previm/previm'
 hook_add = '''
-  nnoremap <silent><Space><Space>p :PrevimOpen<CR>
+  command! -nargs=0 Preview :PrevimOpen
 '''
 
-[[plugins]]
+[[plugins]]  # previm実行時にブラウザを起動する
 repo = 'tyru/open-browser.vim'
-
-[[plugins]]
-repo = 'dhruvasagar/vim-table-mode'
-hook_add = '''
-  let g:table_mode_corner = '|'
-'''

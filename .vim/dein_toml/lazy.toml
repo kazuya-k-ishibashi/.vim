@@ -3,8 +3,12 @@ repo = 'suan/vim-instant-markdown'
 on_ft = ['md']
 
 [[plugins]]
+repo = 'digitaltoad/vim-pug'
+on_ft = ['pug']
+
+[[plugins]]
 repo = 'pangloss/vim-javascript'
-on_ft = ['javascript', 'riot']
+on_ft = ['javascript']
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
@@ -15,12 +19,12 @@ repo = 'ryym/vim-riot'
 on_ft = ['riot']
 
 [[plugins]]
-repo = 'digitaltoad/vim-pug'
-on_ft = ['pug']
+repo = 'elmcast/elm-vim'
+on_ft = ['elm']
 
 [[plugins]]
-repo = 'elmcast/elm-vim'
-on_ft = 'elm'
+repo = 'udalov/kotlin-vim'
+on_ft = ['kotlin']
 
 [[plugins]]
 repo = 'dart-lang/dart-vim-plugin'
@@ -33,3 +37,7 @@ on_ft = ['dart']
 [[plugins]]
 repo = 'jparise/vim-graphql'
 on_ft = ['graphql']
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+on_ft = ['terraform']
