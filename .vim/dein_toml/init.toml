@@ -42,11 +42,8 @@ hook_add = '''
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
 '''
 
-[[plugins]]  # Markdown, PlantUML等のプレビュー
-repo = 'previm/previm'
-hook_add = '''
-  command! -nargs=0 Preview :PrevimOpen
-'''
-
 [[plugins]]  # previm実行時にブラウザを起動する
 repo = 'tyru/open-browser.vim'
+
+[[plugins]]  # Markdown, PlantUML等のプレビュー
+repo = 'previm/previm'

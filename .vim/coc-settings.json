@@ -20,6 +20,11 @@
   "eslint.packageManager": "yarn",
   "prettier.requireConfig": true,
   "prettier.disableSuccessMessage": true,
+  "markdownlint.config": {
+    "ul-indent": {
+      "indent": 4
+    }
+  },
   "languageserver": {
     "d": {
       "command": "/home/kishibashi/.dub/packages/.bin/dls-latest/dls",
