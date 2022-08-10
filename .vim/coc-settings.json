@@ -6,20 +6,21 @@
     "typescript",
     "typescript.tsx",
     "typescriptreact",
+    "json",
+    "yaml",
+    "graphql",
     "css",
     "less",
     "scss",
+    "sass",
     "stylus",
-    "json",
-    "graphql",
     "markdown",
-    "yaml",
-    "html"
+    "html",
+    "php"
   ],
   "javascript.suggestionActions.enabled": false,
   "eslint.packageManager": "yarn",
   "prettier.requireConfig": true,
-  "prettier.disableSuccessMessage": true,
   "markdownlint.config": {
     "ul-indent": {
       "indent": 4
