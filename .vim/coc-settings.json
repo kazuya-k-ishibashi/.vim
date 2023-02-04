@@ -30,14 +30,6 @@
   },
   "python.formatting.provider": "black",
   "languageserver": {
-    "d": {
-      "command": "/home/kishibashi/.dub/packages/.bin/dls-latest/dls",
-      "args": ["--stdio"],
-      "filetypes": ["d"],
-      "trace.server": "off",
-      "rootPatterns": ["dub.json", "dub.sdl"],
-      "initializationOptions": {},
-      "settings": {}
     "csharp-ls": {
       "command": "~/.dotnet/tools/csharp-ls",
       "filetypes": ["cs"],
