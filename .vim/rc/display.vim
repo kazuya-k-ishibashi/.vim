@@ -15,4 +15,6 @@ set showcmd
 "
 set cmdheight=2
 
+set splitright
+
 syntax on
