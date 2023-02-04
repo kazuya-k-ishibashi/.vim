@@ -39,6 +39,8 @@ hook_add = '''
     \, 'coc-kotlin'
     \, 'coc-pyright'
     \ ]
+  set signcolumn=yes
+  highlight! link SignColumn LineNr
   highlight CocFloating ctermfg=255 ctermbg=242
   highlight CocWarningFloat ctermfg=255
   highlight CocErrorFloat ctermfg=255
