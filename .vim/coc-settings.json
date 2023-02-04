@@ -38,6 +38,10 @@
       "rootPatterns": ["dub.json", "dub.sdl"],
       "initializationOptions": {},
       "settings": {}
+    "csharp-ls": {
+      "command": "~/.dotnet/tools/csharp-ls",
+      "filetypes": ["cs"],
+      "//rootPatterns": ["*.csproj"]
     },
     "dart": {
       "command": "dart",
