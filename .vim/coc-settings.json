@@ -17,7 +17,8 @@
     "stylus",
     "markdown",
     "html",
-    "php"
+    "php",
+    "python"
   ],
   "javascript.suggestionActions.enabled": false,
   "eslint.packageManager": "yarn",
@@ -27,6 +28,7 @@
       "indent": 4
     }
   },
+  "python.formatting.provider": "black",
   "languageserver": {
     "d": {
       "command": "/home/kishibashi/.dub/packages/.bin/dls-latest/dls",
