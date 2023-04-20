@@ -12,6 +12,7 @@
     "json",
     "yaml",
     "graphql",
+    "prisma",
     "c",
     "cpp",
     "cs",
@@ -41,7 +42,7 @@
     "csharp-ls": {
       "command": "~/.dotnet/tools/csharp-ls",
       "filetypes": ["cs"],
-      "//rootPatterns": ["*.csproj"]
+      "rootPatterns": ["*.csproj"]
     },
     "dart": {
       "command": "dart",
