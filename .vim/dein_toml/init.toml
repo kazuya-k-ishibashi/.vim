@@ -46,8 +46,20 @@ hook_add = '''
   highlight CocFloating ctermfg=255 ctermbg=242
   highlight CocWarningFloat ctermfg=255
   highlight CocErrorFloat ctermfg=255
-  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+  inoremap <silent> <expr> <TAB>
+      \ coc#pum#visible()
+      \ ? coc#pum#next(1)
+      \ : "\<Tab>"
+  inoremap <expr> <S-TAB>
+      \ coc#pum#visible()
+      \ ? coc#pum#prev(1)
+      \ : "\<C-h>"
+  inoremap <silent> <expr> <CR>
+      \ coc#pum#visible()
+      \ ? coc#pum#confirm()
+      \ : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
   command! -nargs=0 Prettier :CocCommand prettier.formatFile
   autocmd FileType vue call coc#config('volar.takeOverMode.enabled', v:true)
   autocmd FileType vue call coc#config('tsserver.enable', v:false)
